@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
-
+import 'package:transparent_image/transparent_image.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -62,14 +62,11 @@ class _MyAppState extends State<MyApp> {
             future: catImage,
             builder: (context, snapshot) {
               if (snapshot.hasData) {
-                return new Center(
-                    child: new Stack(
+                return ListView(
+                  padding: const EdgeInsets.all(8),
                   children: <Widget>[
-                    new Image.network(
-                      snapshot.data.file,
-                    ),
-                    new RaisedButton(
-                      child: Text("Show me more cats"),
+                    RaisedButton(
+                      child: Text("NEXT"),
                       color: Colors.red,
                       textColor: Colors.white,
                       onPressed: () {
@@ -77,9 +74,24 @@ class _MyAppState extends State<MyApp> {
                           catImage = fetchCatImage();
                         });
                       },
-                    )
+                    ),
+                    Stack(
+                      children: <Widget>[
+                        Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Center(
+                              child: CircularProgressIndicator()),
+                        ),
+                        Center(
+                          child: FadeInImage.memoryNetwork(
+                            placeholder: kTransparentImage,
+                            image: snapshot.data.file,
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
-                ));
+                );
               } else if (snapshot.hasError) {
                 return Text("Error: ${snapshot.error}");
               }
