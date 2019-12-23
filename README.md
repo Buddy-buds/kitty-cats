@@ -1,16 +1,36 @@
-# test_app
+# Kitty Cats
 
-A new Flutter project.
+Flutter application made to honor and appreciate cats' beauty
 
-## Getting Started
+## Table of contents
 
-This project is a starting point for a Flutter application.
+- [Kitty Cats](#kitty-cats)
+  - [Table of contents](#table-of-contents)
+  - [Quick start](#quick-start)
+  - [Bugs and feature requests](#bugs-and-feature-requests)
+  - [Contributing](#contributing)
+  - [Creators](#creators)
+  - [Thanks](#thanks)
 
-A few resources to get you started if this is your first Flutter project:
+## Quick start
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+This is a normal flutter app. You should follow the instructions in the [official documentation](https://flutter.io/docs/get-started/install).
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Bugs and feature requests
+
+Have a bug or a feature request? Please head to this [repository issues](https://github.com/Buddy-buds/kitty-cats/issues) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Buddy-buds/kitty-cats/issues/new).
+
+## Contributing
+
+If you would like to contribute, please don't hesitate and head to our [trello board](https://trello.com/b/QCaLikJ8/kitty-cats) which is mantained by [Alexis Duarte](https://github.com/alecsisduarte) and [Luis Dueñas](https://github.com/luisduenas).
+
+If you don't have access to our trello board, ask us to include you!
+
+## Creators
+
+- **[Luis Dueñas](https://github.com/lduenas)**
+- **[Alexis Duarte](https://github.com/lduenas)**
+
+## Thanks
+
+Thanks to all contributors and their support.
